@@ -1,25 +1,25 @@
 {
   "name": "mishka",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "private": true,
   "description": "Личный проект «Мишка» от HTML Academy",
   "devDependencies": {
-    "autoprefixer": "8.3.x",
-    "browser-sync": "2.23.x",
-    "gulp": "3.9.x",
+    "autoprefixer": "9.1.x",
+    "browser-sync": "2.24.x",
+    "gulp": "4.0.x",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "7.0.x",
+    "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
-    "stylelint": "9.2.x",
+    "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp style",
-    "start": "gulp serve"
+    "build": "gulp css",
+    "start": "gulp start"
   },
   "browserslist": [
     "last 2 versions",
@@ -35,6 +35,6 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.11"
+    "node": "8.12"
   }
 }
